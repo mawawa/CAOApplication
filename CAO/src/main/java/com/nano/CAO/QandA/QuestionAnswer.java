@@ -20,7 +20,7 @@ public class QuestionAnswer {
     )
     @Id
     private Long sysId;
-    private int number;
+    private String number;
     private int tutorial;
     private String question;
     private String answer;
