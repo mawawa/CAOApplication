@@ -51,8 +51,17 @@
 <!-- adding the history of computers -->
 <div class="container" th:insert="~{History::history}">The history of Computing</div>
 
+<!-- adding designing for performance -->
+<div class="container" th:insert="~{Designing::designing}">Designing for performance</div>
+
+<!-- Bus-->
+<div class="container" th:insert="~{Bus::bus}">Bus structure and interconnection structures</div>
+
+<!-- add the hamming code information-->
+<div class="container" th:insert="~{Hamming::hamming}">Hamming Code</div>
+
 <div class="container">
-    <H4>add a tutorial Question</H4>
+    <H4>Add a tutorial Question</H4>
 </div>
 <div th:insert="~{QandA/QandAForm::QandAForm}"></div>
 <hr>

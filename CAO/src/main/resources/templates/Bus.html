@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container" th:fragment="bus">
+    <h1>Bus structure and inter connection structures</h1>
+    <p>
+        A computer consists of a set of components or
+        modules of 3 basic types (processor, memory, I/O)
+        that communicate with each other
+        • In effect, a computer is a network of basic modules.
+        – Thus, there must be paths for connecting the modules.
+        • The collection of paths connecting the various
+        modules is called the interconnection structure
+        – The design of this structure will depend on the exchanges
+        that must be made among modules
+    </p>
+    <h3>Bus Structure</h3>
+    <p>
+        – A bus is a communication pathway connecting two or
+        more devices.
+        – A key characteristic of a bus is that it is a shared
+        transmission medium.
+        <br>
+        • Multiple devices connect to the bus, and a signal transmitted by
+        any one device is available for reception by all other devices
+        attached to the bus
+<br>
+        – If two devices transmit during the same time period, their
+        signals will overlap and become garbled. Thus, only one
+        device at a time can successfully transmit
+        <br>
+        on any bus the lines can be classified into three
+        functional groups: <b> data, address, </b>and <b>control lines</b>
+    </p>
+    <h4>
+        Data lines
+    </h4>
+    <p>
+        The data lines provide a path for moving data among
+        system modules. These lines, collectively, are called the
+        data bus
+        <br>
+        • The data bus may consist of 32, 64, 128, or even more separate
+        lines, the number of lines being referred to as the width of he
+        data bus
+        <br>
+        • Because each line can carry only one bit at a time, the number
+        of lines determines how many bits can be transferred at a time
+    </p>
+
+    <h4>
+        Address lines
+    </h4>
+    <p>
+        The address lines are used to designate the source or
+        destination of the data on the data bus
+        <br>
+        • For example, if the processor wishes to read a word (8, 16, or
+        32 bits) of data from memory, it puts the address of the desired
+        word on the address lines.
+        <br>
+        • Clearly, the width of the address bus determines the maximum
+        possible memory capacity of the system
+        <br>
+        • Furthermore, the address lines are generally also used to
+        address I/O ports
+    </p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
