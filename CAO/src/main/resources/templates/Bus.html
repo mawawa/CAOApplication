@@ -49,6 +49,7 @@
         • The data bus may consist of 32, 64, 128, or even more separate
         lines, the number of lines being referred to as the width of he
         data bus
+
         <br>
         • Because each line can carry only one bit at a time, the number
         of lines determines how many bits can be transferred at a time
@@ -68,9 +69,40 @@
         • Clearly, the width of the address bus determines the maximum
         possible memory capacity of the system
         <br>
+
+    </p>
+
+    <h4>Point to Point Interconnect</h4>
+    <p>
+        – Compared to the shared bus, the point-to-point
+        interconnect has lower latency, higher data rate, & better
+        scalability.
+        <br>
+        – One example of the point-to-point interconnect approach:
+        Intel’s QuickPath Interconnect (QPI).
+        <br>
         • Furthermore, the address lines are generally also used to
         address I/O ports
+        <br>
+        In addition, QPI is used to connect to an I/O module,
+        called an I/O hub (IOH).
+        • The IOH acts as a switch directing traffic to and from I/O
+        deviceS
+        <br>
+        – In newer systems, the link from the IOH to the I/O device
+        controller uses an interconnect technology called PCI
+        Express (PCIe),
+        <br>
+        – QPI is defined as a four-layer protocol architecture and
+        has the following layers
     </p>
+    <h3>QPI Layers</h3>
+    <ol>
+        <li><b>Physical layer -</b></li>this are the wires connecting the components together.
+        <li><b>Link layer-</b>This layer is responsible for reliable transmission and flow control.</li>
+        <li><b>Routing layer-</b>This is the framwork that provides the directions for the packets. </li>
+        <li><b>Protocol layer-</b>This layer defines a high level set of rules for exchanging data.</li>
+    </ol>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

@@ -11,7 +11,7 @@ import static java.util.Arrays.asList;
 public class HammingEncoder implements Serializable {
 
 
-    public static List<Boolean> getHammingCode(List<Boolean> bitString){
+    public static Boolean[] getHammingCode(List<Boolean> bitString){
         List<Boolean> newBitString  = new ArrayList<>();
 
         //step one define m as the data bits and r as the redundant bits.
@@ -27,10 +27,24 @@ public class HammingEncoder implements Serializable {
         System.out.println("Equation: 2 pow(" + r + ") >=  " + m +"+"+ r+ "+ 1");
 
         //create the box for the encoded bitString
-        Array[] newString = new Array[m+r];
+        Boolean[] newString = new Boolean[m+r];
+        //zero out the array
+        for(int i = 0;i <r+m;i++){
+             newString[i] = false;
+        }
+
+        //empty out the redundant spaces
+        for(int i = 0;i <r;i++){
+            System.out.println(i);
+            int position =(int) pow(2,i);
+            newString[position] = null;
+        }
 
 
-        return null;
+        //place the data at the position
+
+
+        return newString;
     }
 
 
@@ -53,7 +67,17 @@ public class HammingEncoder implements Serializable {
                 true,
                 true,
                 false);
-        getHammingCode( bitString);
+
+        for (Boolean b :
+                getHammingCode(bitString)) {
+            if(b != null) {
+                System.out.print(b.toString()+ " ");
+            }else{
+                System.out.print("p ");
+            }
+        }
+        System.out.println();
+
     }
 
 
