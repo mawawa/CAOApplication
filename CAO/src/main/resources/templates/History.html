@@ -9,7 +9,7 @@
 <body>
 <div class="container" th:fragment = "history">
   <h1>History Of Computing</h1>
-  <h3>First Generation Computers : Vacuum Tubes</h3>
+  <h2>First Generation Computers : Vacuum Tubes</h2>
   <p>
     This computer is made of vacuum tubes, for digital logic and also memory. This computer was developed under
     the <b>Institute of Advanced Study IAS</b> by  <i>John Van Newman</i>. The computer consists of the following components.
@@ -19,9 +19,145 @@
       Main Memory
     </li>
     <li>
-      Arithmetic login unit (ALU)
+      Central processing unit
+    </li>
+    <li>
+      Input output
+    </li>
+    <li>
+      System bus
     </li>
   </ol>
+
+  <h3>
+    The components of an IAS computer system
+  </h3>
+  <ol>
+    <li>
+      <b>
+        Main Memory
+      </b>
+      <br>
+      this component stores data and instruction in 4096 storage locations
+      (called words)
+    </li>
+    <li>
+      <b>
+        Arithmetic Logic Unit(CA)
+      </b>
+      <br>
+      This component is capable of performing operations on binary data
+    </li>
+    <li>
+      <b>
+        Control Unit(CC)
+      </b>
+      This component interprets the instructions in memory and causes them to
+      be executed by fetching the from memory and executing them.
+    </li>
+  </ol>
+  <h3>Registers</h3>
+  <p>
+    Both the <b>Control Unit</b> and the <b>Arithmetic Login Unit</b> contain registers
+    defined a follows.
+  </p>
+  <ol>
+    <li>
+      <b>
+        Memory Buffer Register(MBR)
+      </b>
+      <br>
+      This buffer contains a word that is to be stored in memory or is to
+      be sent to the IO unit.
+    </li>
+
+    <li>
+      <b>Memory Address Buffer</b>
+      <br>
+      This buffer contains the address in memory of the word that is to be written into
+      or read into the Memory Buffer Register.
+    </li>
+    <li>
+      <b>Instruction Register (IR)</b>
+      <br>
+      This contains the 8 bit  opcode instruction being executed.
+    </li>
+    <li>
+      <b>
+        Instruction buffer Register (IBR)
+      </b>
+      <br>
+      This register holds the right hand instruction from a world in memory.
+    </li>
+    <li>
+      <b>
+        Program counter (PC)
+      </b>
+      <br>
+      This contains the address of the next instruction pair to be fetched from memory .
+    </li>
+    <li>
+      <b>
+        Accumulator(AC) and Multiplexer Quotient (MQ)
+      </b>
+      Holds the operands temporarily and the results from the ALU
+    </li>
+  </ol>
+
+  <h2>The Second Generation Computers : Transistors</h2>
+
+  <p>
+    The transistor, which is smaller, cheaper &
+    generates less heat replaced the vacuum tube but
+    used the same way to construct computers
+    <br>
+    • Unlike the vacuum tube, which requires wires,
+    metal plates, a glass capsule, and a vacuum, the
+    transistor is a solid-state device, made from silicon.
+    The second generation saw the introduction of more
+    complex arithmetic and logic units and control units, the
+    use of high- level programming languages, and the
+    provision of system software with the computer
+
+    • The size of main memory, in multiples of 210 36-bit
+    words, grew from 2k (1k = 210) to 32k words, while the
+    time to access one word of memory, the Memory Cycle
+    Time, fell from 30 microseconds to 1.4 microseconds.
+  </p>
+
+  <h2>The Third Generation Computers: Integrated
+    Circuits</h2>
+  <p>
+    A single, self-contained transistor is called a
+    discrete component.
+    • In the1950s and early 1960s, electronic equipment
+    was composed largely of discrete components -
+    transistors, resistors, capacitors, and so on.
+    • These components were manufactured separately,
+    packaged in their own containers, and soldered or
+    wired together onto Masonite-like circuit boards,
+    which were then installed in computers.
+    <br>
+    Whenever an electronic device called for a
+    transistor, a little tube of metal containing a
+    pinhead-sized piece of silicon had to be soldered
+    to a circuit board.
+
+    • The entire manufacturing process, from transistor
+    to circuit board, was expensive and cumbersome
+    because some computers would consist of about
+    10000 transistors
+    <br>
+    Here, a computer consists of gates, memory cells,
+    and interconnections among these elements.
+
+    • The gates and memory cells are, in turn,
+    constructed of simple electronic components, such
+    as transistors and capacitors
+
+    • A gate is a device that implements a simple
+    Boolean or logical function
+  </p>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Input Output</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div th:insert="~{Navigation::navbar}">Navigation</div>
+<div class="container" th:fragment="io">
+    <h1>Input Output Peripherals</h1>
+    <p>
+        In addition to the processor and a set of memory
+        modules, the third key element of a computer
+        system is a set of I/O modules
+        • Each module interfaces to the system bus or central
+        switch & controls one or more peripheral devices.
+        – An I/O module is not simply a set of mechanical
+        connectors that wire a device into the system bus.
+        – Rather, the I/O module contains logic for performing a
+        communication function between the peripheral and the
+        bus.
+        <br>
+        <h3>Why don’t peripheral devices connect directly to
+        the system bus</h3>
+    <p>
+        – There are a wide variety of peripherals with various
+        methods of operation.
+        • It would be impractical to incorporate the necessary logic
+        within the processor to control a range of devices.
+
+        – The data transfer rate of peripherals is often much slower
+        than that of the memory or processor.
+        • Thus, it is impractical to use the high-speed system bus to
+        communicate directly with a peripheral.
+    </p>
+
+    <h3>External Devices</h3>
+    <p>
+        We classify external devices into 3 broad categories:
+        – Human readable: Suitable for communicating with the
+        computer user;
+        • E.g. Monitors, printers
+        – Machine readable: Suitable for communicating with
+        equipment;
+        • Eg sensors, magnetic disks, actuators
+        – Communication: Suitable for communicating with
+        remote devices.
+        • Eg terminal, machine-readable device, other computers
+    </p>
+
+    <h3>Components of an input output module</h3>
+    <ol>
+        <li>
+            <b>Control logic</b>
+        </li>
+        <li>
+            <b>
+                Buffer
+            </b>
+        </li>
+        <li>
+            <b>
+                Transducer
+            </b>
+        </li>
+    </ol>
+    <h3>Interfaces of the IO module</h3>
+    <ol>
+        <li>Control lines</li>
+        <li>Address lines</li>
+        <li>Data lines</li>
+    </ol>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

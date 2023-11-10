@@ -10,8 +10,5 @@ public class MemoryController {
         return "memory/Memory.html";
     }
 
-    @RequestMapping("cacheMemory")
-    public String cacheMemory(){
-        return "Cache_Memory.html";
-    }
+
 }
