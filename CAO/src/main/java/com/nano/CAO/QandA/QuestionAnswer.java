@@ -22,7 +22,11 @@ public class QuestionAnswer {
     private Long sysId;
     private String number;
     private int tutorial;
+
+    @Column(length = 1000)
     private String question;
+
+    @Column(length = 1000)
     private String answer;
 
 
