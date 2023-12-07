@@ -1,8 +1,10 @@
 package com.nano.CAO.QandA;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import javax.naming.ldap.SortKey;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,12 +24,12 @@ public class QandAService {
     }
 
     public List<QuestionAnswer> getQuestions(){
-        return qaRepository.findAll();
+        return qaRepository.findAll(Sort.by(Sort.Direction.ASC, "number"));
     }
 
     public List<QuestionAnswer> getQuestions(int tutorial){
         List<QuestionAnswer> questionAnswers = new ArrayList<>();
-        for(QuestionAnswer qandA: qaRepository.findAll()){
+        for(QuestionAnswer qandA: qaRepository.findAll(Sort.by(Sort.Direction.ASC, "number"))){
             if(qandA.getTutorial()== tutorial){
                 questionAnswers.add(qandA);
             }

@@ -13,8 +13,8 @@
     <div  th:each="qAndA: ${qAndAs}" class="card mb-3" style="width: 100%;">
         <div class="card-body">
             <h5 class="card-title" >Question [[${qAndA.number}]]</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary" th:text = "${qAndA.question}">Card subtitle</h6>
-            <p class="card-text" th:text = "${qAndA.answer}">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h6 class="card-subtitle mb-2 text-body-secondary" th:text = "${qAndA.question}" style="white-space: pre-line;" >Card subtitle</h6>
+            <p class="card-text" th:text = "${qAndA.answer}" style="white-space: pre-line; font-family: Minion;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
             <a th:href="@{/deleteQandA(sysId=${qAndA.sysId})}" class="btn btn-outline-danger" >delete</a>
         </div>
