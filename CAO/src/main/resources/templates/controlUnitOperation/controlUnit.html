@@ -17,7 +17,7 @@
         This is the component of the computer the controls the operation of the processor.
         <br>
         Sequencing: The control unit causes the processor to step
-        through a series of micro- operations in the proper
+        through a series of micro-operations in the proper
         sequence, based on the program being executed.
         <br>
         Execution: The control unit causes each micro-operation
@@ -28,7 +28,7 @@
         </em>
         <br>
         • This is how the control unit “keeps time.” The control unit
-        causes one micro- operation(or a set of simultaneous microoperations) to be performed for each clock pulse.
+        causes one micro-operation(or a set of simultaneous micro-operations) to be performed for each clock pulse.
         • This is sometimes referred to as the processor cycle time, or the
         clock cycle time
 
@@ -52,20 +52,20 @@
         Micro operations
     </h2>
     <p>
-        The operation of a computer in executing a program consits of a sequence of instruction cyles. Each instruction
-        cylce is made up of a number of smaller units. This smaller units are as follows:
+        The operation of a computer in executing a program consists of a sequence of instruction cycles. Each instruction
+        cycle is made up of a number of smaller units. This smaller units are as follows:
     </p>
     <dl>
         <dt>fetch</dt>
-        <dd>This occurs at the begining of an instruction cyle. It causes an instruction to be fetched from memory.</dd>
+        <dd>This occurs at the beginning of an instruction cycle. It causes an instruction to be fetched from memory.</dd>
         <dt>indirect</dt>
-        <dd>This cccures to fetch the operands. This step may occur depending on if the instruction fetched specifies
+        <dd>This occurs in-oder to fetch the operands. This step may occur depending on if the instruction fetched specifies
             it.
         </dd>
     </dl>
     <h2>The Fetch Cycle</h2>
     <p>
-        The fetch cyles uses the following registers:
+        The fetch cycles uses the following registers:
     </p>
     <dl>
         <dt>1. MAR</dt>
@@ -83,12 +83,12 @@
     </dl>
     <h3><em>The fetch cycle from the view of the computer</em></h3>
     <p>
-        In the begining of the fetch cylce, the PC hold the address of the next instruction. So firstly is
-        to move the address from the PC to the MAR seeing as it has access the the address lines of the
+        In the beginning of the fetch cycle, the PC hold the address of the next instruction. So firstly is
+        to move the address from the PC to the MAR seeing as it has access the address lines of the
         system bus. Once that is done the control unit issues a <em>READ</em> command on the control bus,
         and thus the data in the memory address held by the MAR is copied from memory to the MBR through
-        the data lines of the system bus. After the we update the PC for the next instruction by <em>increamenting.</em>
-        these actions do not interup each other and thus are do semultaniously. Lasty the contents in the MBR are
+        the data lines of the system bus. After that we update the PC for the next instruction by <em>incrementing.</em>
+        these actions do not interrupt each other and thus are do simultaneously. Lastly the contents in the MBR are
         moved to the IR, freeing up the MBR awaiting other uses like and indirect cycle.
     </p>
     <h2>The Indirect Cycle</h2>
@@ -97,6 +97,7 @@
 
 <div class="container">
     <h4>Add tutorial 6 question</h4>
+    <a style="float: right;padding: 2rem;" th:href="@{pdf/t6.pdf}">download tutorial</a><a  style="float: right;padding: 2rem;" th:href="@{pdf/l6.pdf}">download lecture slides</a>
 </div>
 <div th:insert="~{QandA/QandAForm::QandAForm}">Question and Answer form</div>
 <hr>

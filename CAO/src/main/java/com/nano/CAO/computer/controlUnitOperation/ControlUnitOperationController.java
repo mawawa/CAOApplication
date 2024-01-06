@@ -1,4 +1,4 @@
-package com.nano.CAO.controlUnitOperation;
+package com.nano.CAO.computer.controlUnitOperation;
 
 import ch.qos.logback.core.model.Model;
 import com.nano.CAO.QandA.QandAService;
