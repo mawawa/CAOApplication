@@ -64,12 +64,15 @@
 
 <div class="container">
     <H4>Add a tutorial Question</H4>
+    <a style="float: right;padding: 2rem;" th:href="@{pdf/t1.pdf}">download tutorial</a><a  style="float: right;padding: 2rem;" th:href="@{pdf/l1.pdf}">download lecture slides</a>
+
 </div>
 <div th:insert="~{QandA/QandAForm::QandAForm}"></div>
 <hr>
 <br>
 <div class="container">
     <H2>Tutorial 1</H2>
+
 </div>
 <div th:insert="~{QandA/QandA::QandA}"></div>
 
